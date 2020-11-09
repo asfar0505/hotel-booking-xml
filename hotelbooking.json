@@ -1,0 +1,24 @@
+{
+  "hotelbooking": {
+    "room": [
+      {
+        "@no": "1",
+        "roomtype": "deluxe",
+        "bed": "3",
+        "price": "Rs 3000",
+      },
+      {
+        "@no": "2",
+        "roomtype": "double ",
+        "bed": "2",
+        "price": "Rs 2250",
+      },
+      {
+        "@no": "3",
+        "roomtype": "single",
+        "bed": "1",
+        "price": "Rs 1500",
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT hotelbooking (customer+)>
+<!ELEMENT customer (name,age,gender,phone,arrival,departure,roomtype)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT arrival (#PCDATA)>
+<!ELEMENT departure (#PCDATA)>
+<!ELEMENT roomtype (#PCDATA)>
+<!ATTLIST customer id ID #REQUIRED>

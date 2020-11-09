@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT hotelbooking (room+)>
+<!ELEMENT room (roomtype,bed,price)>
+<!ELEMENT roomtype (#PCDATA)>
+<!ELEMENT bed (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST room no ID #REQUIRED>

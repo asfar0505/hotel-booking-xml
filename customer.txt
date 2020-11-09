@@ -1,0 +1,7 @@
+{
+"customer": [
+      { "name": "Natasha","age": "18","gender": " female ","phone": " 9845612475 ","arrival": " 8.11.2020 ","departure": " 8.12.2020 ","roomtype": " single "},
+      { "name": "Abu","age": "25","gender": " male ","phone": " 8056975413 ","arrival": " 20.11.2020 ","departure": " 10.12.2020 ","roomtype": " deluxe "},
+      { "name": "Teena","age": "30","gender": " female ","phone": " 9944875621 ","arrival": " 22.12.2020 ","departure": " 12.01.2021 ","roomtype": " double "}
+    ]
+}

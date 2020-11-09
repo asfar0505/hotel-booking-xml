@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="hotelbooking.xsl" type="text/xsl" ?>
+<hotelbooking>
+<room no="1">
+  <roomtype> deluxe </roomtype>
+  <bed>3 </bed>
+  <price>Rs 3000</price>
+</room>
+<room no="2">
+  <roomtype> double </roomtype>
+  <bed> 2 </bed>
+  <price>Rs 2250</price>
+</room>
+<room no="3">
+  <roomtype> single </roomtype>
+  <bed> 1 </bed>
+  <price>Rs 1500</price>
+</room>
+</hotelbooking>

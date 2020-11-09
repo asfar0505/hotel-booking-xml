@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hotelbooking>
+<customer id="001">
+  <name>Natasha</name>
+  <age>18</age>
+  <gender>female</gender>
+  <phone> 9845612475 </phone>
+  <arrival> 8.11.2020 </arrival>
+  <departure> 8.12.2020 </departure>
+  <roomtype> single </roomtype>
+</customer>
+<customer id="002">
+  <name>Abu</name>
+  <age>25</age>
+  <gender>male</gender>
+  <phone> 8056975413 </phone>
+  <arrival> 20.11.2020 </arrival>
+  <departure> 10.12.2020 </departure>
+  <roomtype> deluxe </roomtype>
+</customer>
+<customer id="003">
+  <name>Teena</name>
+  <age>30</age>
+  <gender>female</gender>
+  <phone> 9944875621 </phone>
+  <arrival> 22.12.2020 </arrival>
+  <departure> 12.01.2021 </departure>
+  <roomtype> double </roomtype>
+</customer>
+</hotelbooking>

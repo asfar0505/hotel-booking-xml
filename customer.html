@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-image: url('bg.jpg');
+}
+body {
+  color: black;
+  background-color : black;
+}
+
+h1 {
+  color: maroon;
+}
+
+h3 {
+  color : indigo;
+}
+</style>
+</head>
+<body>
+<div>
+<h1><B> Customer</B></h1>
+<h3>Name:</h3> <p id="demo"></p>
+<h3>Arrival:</h3> <p id ="demo1">Arrival:</p>
+<h3>Departure:</h3> <p id ="demo4">Departure:</p>
+<h3>Roomtype:</h3> <p id ="demo5">Roomtype:</p>
+<h3>Node name of first child of "customer"</h3> <p id="demo2"></p>
+<h3>Roomtype available: </h3> <p id = "demo3"></p>
+</div>
+
+<script>
+var text, parser, xmlDoc;
+var text1 = "";
+
+text = "<hotelbooking><customer>" +
+  "<name>Natasha</name>" +
+  "<age>18</age>" +
+  "<gender>female</gender>" +
+  "<phone> 9845612475 </phone>" +
+  "<arrival> 8.11.2020 </arrival>" +
+  "<departure> 8.12.2020 </departure>" +
+  "<roomtype> single </roomtype>" +
+"</customer>" + 
+"<customer>" +
+  "<name>Abu</name>" +
+  "<age>25</age>" +
+  "<gender>male</gender>" +
+  "<phone> 8056975413 </phone>" +
+  "<arrival> 20.11.2020 </arrival>" +
+  "<departure> 10.12.2020 </departure>" +
+  "<roomtype> deluxe </roomtype>" +
+"</customer>" +
+"<customer>" +
+  "<name>Teena</name>" +
+  "<age>30</age>" +
+  "<gender>female</gender>" +
+  "<phone> 9944875621 </phone>" +
+  "<arrival> 22.12.2020 </arrival>" +
+  "<departure> 12.01.2021 </departure>" +
+  "<roomtype> double </roomtype>" +
+"</customer></hotelbooking>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("demo").innerHTML =
+xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+document.getElementById("demo1").innerHTML =
+xmlDoc.getElementsByTagName("arrival")[0].childNodes[0].nodeValue;
+document.getElementById("demo4").innerHTML =
+xmlDoc.getElementsByTagName("departure")[0].childNodes[0].nodeValue;
+document.getElementById("demo5").innerHTML =
+xmlDoc.getElementsByTagName("roomtype")[0].childNodes[0].nodeValue;
+document.getElementById("demo2").innerHTML =
+xmlDoc.getElementsByTagName("customer")[0].childNodes[0].nodeName;
+text1 = text1 + xmlDoc.getElementsByTagName("roomtype")[0].childNodes[0].nodeValue + "<br>" +
+xmlDoc.getElementsByTagName("roomtype")[1].childNodes[0].nodeValue + "<br>" +
+xmlDoc.getElementsByTagName("roomtype")[2].childNodes[0].nodeValue + "<br>";
+
+
+document.getElementById("demo3").innerHTML = text1;
+
+</script>
+
+</body>
+</html>
